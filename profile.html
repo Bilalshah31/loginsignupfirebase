@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Navbar</a>
+            <button onclick="logout()" class="btn btn-outline-success" type="submit">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center mt-20">
+            <div class="col-6 justify-content-center text-center">
+                <h2>Profile</h2>
+                <div class="profile-div">
+                    <img src="https://cdn1.vectorstock.com/i/1000x1000/05/60/man-character-employee-vector-25090560.jpg"
+                        alt="">
+                </div>
+                <div class="mt-20">
+                    <h2 id="username"></h2>
+                    <span id="email"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCWSPH5TGMMQvTDYLxd6W2ZdZqtMWtDXMg",
+    authDomain: "login-signup-76b81.firebaseapp.com",
+    projectId: "login-signup-76b81",
+    storageBucket: "login-signup-76b81.appspot.com",
+    messagingSenderId: "747941653350",
+    appId: "1:747941653350:web:faca2099253d6b08dcb6a7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+
+    <script src="profile.js"></script>
+</body>
+
+</html>
